@@ -2,6 +2,7 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
+const writeToFile = require("./lib/generateSVG");
 
 
 /***************************************************** Inquirer Prompt ********************************************************/
@@ -46,8 +47,7 @@ function promptUser() {
 };
 
 
-/******************************************** Initializes function ********************************************/
+/**************************************************** Initializes function **************************************************/
 
 
 promptUser();
-  

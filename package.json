@@ -1,6 +1,19 @@
 {
+  "name": "logosvg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.23",
+    "inquirer": "^8.2.4",
     "jest": "^29.7.0"
   }
 }
