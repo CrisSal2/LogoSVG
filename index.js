@@ -3,12 +3,13 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const writeToFile = require("./lib/generateSVG");
+const { Triangle, Square, Circle } = require("./lib/shapes");
 
 
 /***************************************************** Inquirer Prompt ********************************************************/
 
 
-function promptUser() {
+function createLogo() {
     inquirer
       .prompt([
         {
@@ -39,7 +40,7 @@ function promptUser() {
       .then((answers) => {
         if (answers.text.length > 3) {
           console.log("Must enter a value of no more than 3 characters");
-          promptUser();
+          createLogo();
         } else {
           writeToFile("logo.svg", answers);
         }
@@ -50,4 +51,4 @@ function promptUser() {
 /**************************************************** Initializes function **************************************************/
 
 
-promptUser();
+createLogo();
