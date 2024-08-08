@@ -2,20 +2,25 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-/* const writeToFile = require('./lib/generateSVG'); */
+
+// Imports Shapes classes from shapes.js
 const { Triangle, Square, Circle } = require('./lib/shapes');
 
 
-/********************************************* Function to render using answers ************************************************/
+/********************************************* Function to render logo using answers ************************************************/
 
 function writeToFile(fileName, answers) {
 
+  // Starts file height and width
   let svgString = '';
   svgString =
     '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
+
+    // Wraps the logo in <g> tags (The <g> SVG element is a container used to group other SVG elements.)
   svgString += '<g>';
   svgString += `${answers.shape}`;
 
+  // Creates 
   let shapeChoice;
   if (answers.shape === 'Triangle') {
     shapeChoice = new Triangle();
