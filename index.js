@@ -20,7 +20,7 @@ function writeToFile(fileName, answers) {
   svgString += '<g>';
   svgString += `${answers.shape}`;
 
-  // Uses answers from prompt and creates new shape
+  // Uses answers from prompt and creates new shape and logo text
   let shapeChoice;
   if (answers.shape === 'Triangle') {
     shapeChoice = new Triangle();
