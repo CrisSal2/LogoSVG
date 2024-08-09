@@ -7,6 +7,8 @@
 
 
 - Example logo:
+
+
 ![Webpage Preview](./examples/logo.svg)
 
 
