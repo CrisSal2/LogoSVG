@@ -20,7 +20,7 @@ function writeToFile(fileName, answers) {
   svgString += '<g>';
   svgString += `${answers.shape}`;
 
-  // Creates 
+  // Uses answers from prompt and creates new shape
   let shapeChoice;
   if (answers.shape === 'Triangle') {
     shapeChoice = new Triangle();
@@ -37,6 +37,7 @@ function writeToFile(fileName, answers) {
   svgString += '</g>';
   svgString += '</svg>';
 
+  // The writeFile() method is used to asynchronously write the specified data to a file
   fs.writeFile(fileName, svgString, (err) => {
     err ? console.log(err) : console.log('Generated logo.svg');
   });
@@ -45,7 +46,7 @@ function writeToFile(fileName, answers) {
 
 /***************************************************** Inquirer Prompt ********************************************************/
 
-
+// Inquirer prompt questions for logo
 function createLogo() {
     inquirer
       .prompt([
