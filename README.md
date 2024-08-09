@@ -16,8 +16,6 @@
 
 - Node.js must be installed
 
-- Using the command line, install inquirer with the following command: npm i inquirer@8.2.4
-
-- Using the command line, install jest with the following command: npm i jest
+- Using the command line, install inquirer with the following command: npm install
 
 - Now you can run the application with the following command: node index.js
