@@ -12,6 +12,11 @@
 ![Webpage Preview](./examples/logo.svg)
 
 
+- Video Guide:
+
+https://www.youtube.com/watch?v=1PrmOVWhtwM
+
+
 ## Usage
 
 - Node.js must be installed
